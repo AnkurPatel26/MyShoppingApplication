@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ankur.finalproject.PaymentPage">
+
+
+    <!--android:backgroundTint="?android:attr/textColorSearchUrl"-->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="362dp"
+            android:layout_height="112dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/paymentoption" />
+
+        <Button
+            android:id="@+id/GoBack"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+
+            android:text="Go Back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/expiryMonth"
+            android:layout_alignStart="@+id/expiryMonth"
+            android:layout_marginBottom="11dp" />
+
+        <EditText
+            android:id="@+id/expiryMonth"
+            android:layout_width="154dp"
+            android:layout_height="43dp"
+
+            android:ems="10"
+            android:hint="Month"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView10"
+            android:layout_alignLeft="@+id/textView10"
+            android:layout_alignStart="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="370dp"
+            android:layout_height="39dp"
+
+            android:layout_alignLeft="@+id/HolderName"
+            android:layout_alignStart="@+id/HolderName"
+            android:layout_centerVertical="true"
+            android:text="Expiry Date*"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/ExpiryYear"
+            android:layout_width="144dp"
+            android:layout_height="43dp"
+
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView10"
+            android:layout_toRightOf="@+id/expiryMonth"
+            android:layout_toEndOf="@+id/expiryMonth" />
+
+        <EditText
+            android:id="@+id/HolderName"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv"
+            android:layout_alignStart="@+id/iv"
+            android:layout_below="@+id/CardNumber"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="CardHolder's Name*"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/FPay"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Pay : (Amount)"
+            android:layout_below="@+id/expiryMonth"
+            android:layout_alignLeft="@+id/CardNumber"
+            android:layout_alignStart="@+id/CardNumber"
+            android:layout_marginTop="57dp" />
+
+        <EditText
+            android:id="@+id/CardNumber"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Card Number*"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

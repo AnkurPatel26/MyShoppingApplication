@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+
+<EditText
+    android:id="@+id/editfirstname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Please enter your first name"
+    android:ems="8">
+
+    <requestFocus/>
+</EditText>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+<EditText
+    android:id="@+id/editlastname"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Please enter your last name"
+    android:ems="8"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<EditText
+    android:id="@+id/editemail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Please enter your email"
+    android:textAllCaps="false"
+    android:ems="8"
+    android:inputType="textEmailAddress"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Please enter your place" >
+    </AutoCompleteTextView>
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editmobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter your mobile number"
+            android:ems="8"
+            android:inputType="phone"/>
+    </LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<EditText
+    android:id="@+id/editpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="8"
+    android:hint="Please enter your password"
+    android:inputType="textPassword"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal">
+
+<EditText
+    android:id="@+id/editconfirmpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Please re-enter your password"
+    android:ems="8"
+    android:inputType="textPassword"/>
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+<Button
+    android:id="@+id/btnsave"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Save"/>
+
+<Button
+    android:id="@+id/btncancel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cancel"/>
+</LinearLayout>
+
+    </LinearLayout>
